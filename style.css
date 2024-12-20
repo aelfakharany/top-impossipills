@@ -1,54 +1,43 @@
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.header {
+.header-hero {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
     background-color: #1F2937;
-    margin: 0;
+    color: white;
+    width: 100%;
+    padding: 0 100px 75px 100px;
+    gap: 70px;
 }
 
-ul {
+.header-links ul {
     display: flex;
-    gap: 16px;
+    gap: 20px;
     list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 0 0 0 0;
-    margin: 20px 20px 20px 10px;
-    max-width: 200px; /* Set a maximum width for the gap */
-    flex-grow: 1; /* Allow the gap to grow */
 }
 
-a {
+.header-links a {
     text-decoration: none;
     color: white;
 }
 
-.logo {
-    font-size: 24px;
-    color: white;
-    font-weight: 600;
-    margin: 20px auto 20px 20px;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #1F2937;
-    margin: 0;
-    color: white;
-    padding: 80px 0;
-    gap: 50px;
+.logo {
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .hero-text {
@@ -56,28 +45,31 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    max-width: 450px;
-    margin-left: 20px;
 }
 
-.hero-text .button {
-    display: flex;
-    background-color: #3882F6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 7px 30px;
-    font-weight: bold;
-    font-size: medium;
-}
-
-h1 {
+.hero-text h1 {
     margin: 0;
 }
 
+.hero-text button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
 .hero-image img {
-    margin-right: 20px;
-    max-width: 50px;
+    max-width: 400px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
 }
